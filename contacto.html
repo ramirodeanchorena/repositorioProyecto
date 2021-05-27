@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-Lumiere</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div>
+            <!--el header cuenta con el logo en la esquina superior izquierda que siempre lleva al Home-->
+            <a href="index.html"> <img src="./img/logolumiere.jpg" alt="logo del sitio"></a>
+        </div>
+        <nav>
+            <ul class="menuNav">
+                <!--enlaces relativos del menú de navegación-->
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a>
+                    <ul>
+                        <li><a href="novelas.html">Novelas</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                    </ul>
+                </li>    
+                <li><a href="autores.html">Nuestros autores</a></li>
+                <li><a href="contacto.html">Contacto</a>
+                    <ul>
+                        <li><a href="contacto.html">Déjenos sus datos</a></li>
+                        <li><a href="publique.html">Publique con nosotros</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Una editorial familiar</h1>
+            <p class="subtitulo">Pasión por los libros. De la familia a la comunidad</p>
+        </div>
+
+        <section>
+            <h2>Compartinos tus datos</h2>
+            <!--aquí el usuario nos brindará sus datos-->
+            <form id="formulario">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input name="nombre" type="text" tabindex="1">
+                    <label for="apellido">Apellido:</label>
+                    <input name="apellido" type="text" tabindex="2">
+                    <br>
+                    <label for="genero">Género:</label>
+                    <select name="Género">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>         
+                    </select>
+                    <label for="mail">Mail:</label>
+                    <input name="mail" type="text" tabindex="3">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Newsletter y Condiciones</legend>
+                    <label for="checkbox1">Quiero recibir el newsletter</label>
+                    <input type="checkbox" tabindex="30"
+                                name="condiciones" value="recibirCondiciones">
+                    <br>
+                    <label for="checkbox2">Acepto las condiciones</label>
+                    <input type="checkbox" tabindex="30"
+                                name="condiciones" value="aceptaCondiciones">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Finalizar</legend>
+                    <label for="reset"></label>
+                    <input type="reset" value="Resetear formulario"/>
+                    <label for="submit"></label>
+                    <input type="submit" value="Enviar formulario"/>
+                </fieldset>
+               
+            </form>
+        </section>
+    </main> 
+
+    <footer id="pie">
+        <nav>
+            <ul class="menuNav">
+                <!--enlaces relativos del menú de navegación-->
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a>
+                    <ul>
+                        <li><a href="novelas.html">Novelas</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="politica.html">Política</a></li>
+                    </ul>
+                </li>    
+                <li><a href="autores.html">Nuestros autores</a></li>
+                <li><a href="contacto.html">Contacto</a>
+                    <ul>
+                        <li><a href="contacto.html">Déjenos sus datos</a></li>
+                        <li><a href="publique.html">Publique con nosotros</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+       
+</body>
+</html>

@@ -1,0 +1,491 @@
+body{
+    /*características generales del body*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(218, 214, 214);
+
+}
+
+.cabecera{
+    /*para darle más altura al header y establecer las características de su background*/
+    height: 50vh;
+    background-image: url(/img/libross.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.menuNav{
+    /*para editar el formato del menú y aplicar flexbox*/
+    width: 40vw;
+    height: 8vh;
+    margin-top: 13px;
+    padding-left: 0px;
+    list-style: none;
+    font-size: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+ul li>a{
+    /*para otorgar formato a las palabras del menú de navegación, estilo y color whitesmoke*/
+    width: 10px;
+    position: relative;
+    padding: 15px;
+    justify-content: left;
+    color:whitesmoke;
+    text-decoration:none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+nav ul ul{
+    /*para establecer el submenu*/
+    position:absolute;
+    display: none;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+nav ul ul li{
+    /*características de los elementos del submenú*/
+    display:block;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+nav ul li:hover ul{
+    display:block;
+}
+
+/*nav ul li:hover ul li a{
+    /*submenu*/
+    /*color: rgb(199, 195, 214);
+    text-align: center;
+    margin-left: 0px;
+    line-height: 18px;
+}*/
+
+h1{
+    /*para agregarle color al título, y para aplicarle formato y fuente*/
+    color:rgb(20, 95, 145);
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 10px;
+    padding-top: 0px;
+}
+
+.subtitulo{
+    /*para darle color y modificar la fuente del subtítulo*/
+    color: rgb(65, 63, 63);
+    font-family:'Times New Roman', Times, serif cursive;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+.imagen{
+    /*formato a la imagen de h1 en index.html*/
+    display: block;
+    margin:auto;
+    transform:scale(0.7);
+    transform: translate(0px, 1px)
+}
+
+.carousel-control-prev-icon{
+    background-color: black !important;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+
+/*para aplicar diversas características a las secciones en index.html*/
+
+#seccionPublicaciones{
+    margin-top: 20px;
+}
+
+.titulo{
+    width: auto;
+    height: 10vh;
+    padding-top: 10px;
+    font-family:inherit;
+    text-decoration: underline;
+    padding-left: 0%;
+}
+
+.libro1{
+    /*imagen del primer libro en #seccionPublicaciones*/
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.libro2{
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.libro3{
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.libro4{
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.libro5{
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.libro6{
+    height: 45vh;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+.nombre1{
+    /*características al nombre del libro*/
+    margin-left: 60px;
+    color:black;
+}
+
+.nombre2{
+    margin-left: 60px;
+    color: black;
+}
+
+.nombre3{
+    color: black;
+    margin-left: 20px;
+}
+
+.nombre4{
+    /*características al nombre del libro*/
+    margin-left: 60px;
+    color:black;
+}
+
+.nombre5{
+    /*características al nombre del libro*/
+    margin-left: 60px;
+    color:black;
+}
+
+.nombre6{
+    color: black;
+    margin-left: 60px;
+}
+
+.badge{
+    background-color: rgb(20, 95, 145) !important;
+}
+
+h3{
+    /*para darle color green a la etiqueta h3, que es título de #seccionPublicaciones*/
+    color: black;
+    font-style:normal;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#videoEntrevista{
+    /*para modificar el margen superior del video perteneciente a index.html*/
+    border: solid 3px black;
+    margin: 10px 70px 10px 70px;
+    padding: 20px;
+    background-color: rgb(173, 165, 165);
+}   
+
+.video{
+    /*para centrar el texto de la class="video"*/
+    text-align: center;
+    padding: bottom 5px;;
+}
+
+#pie{
+    /*para aplicar gradiente al footer*/
+    background-image: linear-gradient(to right, black, grey);
+    height: 40vh;
+}
+
+
+/*formato en la página contacto.html*/
+
+#formulario{
+    /*para brindarle color al texto y al fondo del formulario en la página contacto.html*/
+    color: black;
+    background-color: grey;
+}
+
+
+/*para brindarle estilo a la página catalogo.html*/
+.tituloCatalogo{
+    /*para que la etiqueta h3 de la sección catalogo.html sea de color rgb(59, 57, 58)*/
+    color:rgb(59, 57, 58);
+    
+}
+
+#catalogo{
+    /*para organizar el catálogo a partir de grid*/
+    margin: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 100px 75px 100px 150px;
+    grid-template-rows: 5px 25px 25px 75px ;
+    background-color: rgb(209, 202, 172);
+    gap: 100px;
+    align-content: center;  
+}
+
+.primeraLinea{
+    /*primera línea del catálogo*/
+    color: black;
+    font-weight: bolder;
+}
+
+.autoresCatalogo{
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: auto;   
+}
+
+
+/*CSS a autores.html*/
+
+#listaAutores{
+    /*para aplicar flexbox a autores.html*/
+    display: flex;
+    flex-direction: column;
+   
+    flex-basis: 100px;
+}
+
+#listaAutores p{
+    width: 47%;
+}
+
+#listaAutores .btn{
+    text-align: left;
+    justify-content: left;
+    background-color: royalblue;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#listaAutores li h3{
+    /*para que los nombres de los autores en la lista de la sección autores.html sean de color negro*/
+    color: black;
+}
+
+#listaAutores ul{
+    /*para brindarle bordes a cada class correspondiente a un autor*/
+    border: solid 2px black;
+    list-style: none;
+}
+
+.bossi{
+    /*para modelar la clase .bossi*/
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.gonzalez{
+    /*para modelar la clase .gonzalez*/
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.videoAutores{
+    /*modelar la entrevista en video en autores.html*/
+    border: solid 2px black;
+    margin: 10px;
+    padding: 10px
+}
+
+
+/*formato, estilo y grid en nosotros.html*/
+
+#nosotros{
+    /*aplicar grid en nosotros.html*/
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo"
+        "historia staff"
+        "historia staff";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 38% 38%;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%
+}
+
+.tituloNosotros{
+    /*modelar el título en nosotros.html*/
+    grid-area: titulo;
+    border: solid 2px black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color:rgb(110, 164, 185);
+    margin: 5px 5px 5px 5px;
+    height: 80%;
+}
+
+.historia{
+    /*para darle estilo y fuente Raleway de Google Fonts al párrafo ubicado en nosotros.html*/
+    grid-area: historia;
+    border: solid 2px black;
+    padding: 20px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(152, 210, 228);
+    margin: 10px 2.5px 5px 5px;
+}
+
+.historia h3{
+    /*características al h3 de la class historia*/
+    text-decoration: underline;
+    margin-left: 0;
+}
+
+.staff{
+    /*para darle estilo y fuente de Google Fonts a la sección "Nuestro staff" de nosotros.html*/
+    grid-area: staff;
+    border: solid 2px black;
+    padding: 20px;
+    line-height: 35px;
+    background-color: rgb(126, 143, 189);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: double;
+    margin: 10px 5px 5px 2.5px;
+}
+
+.staff h3{
+    /*características al h3 de la class staff*/
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+/*aplicar media query para max-width: 480px en nosotros.html*/
+
+@media screen and (max-width: 480px){
+
+    .bodyNosotros{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        background-color: rgb(218, 214, 214);
+        width: 100%;
+    }
+    .cabeceraNosotros{
+        /*para darle más altura al header y establecer las características de su background*/
+        height: 70vh;
+        background-image: url(/img/libross.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: content-box;
+    }
+    
+    .menuNavNosotros{
+        /*para editar el formato del menú y aplicar flexbox*/
+        width: 90vw;
+        height: 8vh;
+        margin-top: 13px;
+        padding-left: 0px;
+        list-style: none;
+        font-size: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        flex-wrap: nowrap;
+        line-height: 25px;
+    }
+
+    #nosotros{
+        display: flex;
+        flex-direction: column;
+        grid-template-areas: 
+            "titulo"
+            "historia"
+            "staff";
+        grid-template-columns: 100%;
+        grid-template-rows: 18% 41% 41%;
+        background-color: rgb(191, 180, 201);
+        width: 100%;
+        height: 100%;
+    }
+
+    .tituloNosotros{
+        /*modelar el título en nosotros.html*/
+        grid-area: titulo;
+        border: solid 2px black;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color:rgb(99, 223, 62);
+        margin: 5px 5px 5px 5px;
+        height: 100%;
+        width: 96%;
+    }
+
+    h1{
+        text-align: center;
+        color: red;
+        padding-top: 2px !important;
+        line-height: 25px !important;
+        
+    }
+    
+   .subNosotros{
+       margin-bottom: 10px;
+       margin-top: 2px;
+       text-align: center;
+       padding-top: 0px;
+   }
+
+   .historia{
+    /*para darle estilo y fuente Raleway de Google Fonts al párrafo ubicado en nosotros.html*/
+    grid-area: historia;
+    border: solid 2px black;
+    padding: 3px;
+    text-align:justify;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(152, 210, 228);
+    margin: 5px 5px 5px 5px;
+    height: 100%;  
+    width: 94%; 
+}
+
+.staff{
+    /*para darle estilo y fuente de Google Fonts a la sección "Nuestro staff" de nosotros.html*/
+    grid-area: staff;
+    border: solid 2px black;
+    padding: 3px;
+    line-height: 35px;
+    background-color: rgb(133, 184, 39);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: double;
+    margin: 5px 5px 5px 5px;
+    height: 100%;
+    width: 94%;
+    margin-right: 5px;
+    }
+}
